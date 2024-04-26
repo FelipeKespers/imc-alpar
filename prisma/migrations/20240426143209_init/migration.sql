@@ -1,0 +1,6 @@
+-- CreateTable
+CREATE TABLE "imc" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "name" INTEGER NOT NULL,
+    "checked" BOOLEAN NOT NULL DEFAULT false
+);
