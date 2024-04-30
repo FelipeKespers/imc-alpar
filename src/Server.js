@@ -1,5 +1,5 @@
 import express from 'express';
-import { tasksRouter } from './routes/tasks.route.js';
+import { imcsRouter } from './routes/imcs.route.js';
 import bodyParser from 'body-parser';
 
 export class Server {
@@ -20,7 +20,7 @@ export class Server {
 
     setRoutes() {
         this.app.use(express.static('public'));
-        this.app.use('/api/tasks', tasksRouter);
+        this.app.use('/api/imc', imcsRouter);
     }
 
     listen(port) {
